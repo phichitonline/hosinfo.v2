@@ -15,4 +15,3 @@ yarn-error.log
 /.vscode
 /config/database.php
 .DS_Store
-/config
