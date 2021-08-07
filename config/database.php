@@ -64,14 +64,34 @@ return [
             ]) : [],
         ],
 
-            'mysql_hos' => [
+        'mysql_hos' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST2', '127.0.0.1'),
+            'host' => env('DB_HOST2', '200.200.200.10'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE2', 'hos'),
-            'username' => env('DB_USERNAME2', 'root'),
-            'password' => env('DB_PASSWORD2', ''),
+            'username' => env('DB_USERNAME2', 'ghost'),
+            'password' => env('DB_PASSWORD2', 'ghUD2gES'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8',
+            'collation' => 'utf8_general_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => false,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'mysql_lineoa' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST3', '203.157.220.244'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE3', 'smarthos2'),
+            'username' => env('DB_USERNAME3', 'ghost'),
+            'password' => env('DB_PASSWORD3', 'ghUD2gES'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_general_ci',
